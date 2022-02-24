@@ -4,13 +4,15 @@ import './Greenhouse.css';
 
 import LightSwitch from './LightSwitch';
 import ClimateStats from './ClimateStats';
-import { ThemeContext, useTheme} from '../../context/ThemeContext';
-import { useContext } from 'react';
+import { useTheme } from '../../context/ThemeContext';
+
 
 function Greenhouse() {
 
-  const context = useContext(ThemeContext);
-  const theme = useTheme(context);
+  //const context = useContext(ThemeContext);
+  const theme = useTheme();
+
+  // console.log(theme, "this is our theme")
 
   return (
     <section>
